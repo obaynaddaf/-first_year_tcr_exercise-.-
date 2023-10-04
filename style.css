@@ -91,3 +91,18 @@ title{
   margin-bottom:20px;
   padding-bottom: 20px;
 }
+.dropdown:hover .dropdown-toggle {
+  background-color: blue;
+  color: white;
+  .dropdown:hover .dropdown-toggle::before {
+    content: "\25BA";
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 3px;
+    border-radius: 50%;
+  }
+  .dropdown-menu a:hover {
+    background-color: #E9E9E9;
